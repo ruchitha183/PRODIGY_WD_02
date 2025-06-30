@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">⏱Stopwatch</h1>
+    <div class="stopwatch-circle">
+
+    <div class="clock-wrapper">
+      <svg class="progress-ring" width="240" height="240">
+        <circle
+          class="progress-ring__circle"
+          stroke="#6f42c1"
+          stroke-width="8"
+          fill="transparent"
+          r="108"
+          cx="120"
+          cy="120"
+        />
+      </svg>
+      <div class="clock" id="display">00:00:00:000</div>
+    </div>
+
+    <div class="buttons">
+      <button class="start" onclick="start()">Start</button>
+      <button class="pause" onclick="pause()">Pause</button>
+      <button class="stop" onclick="stop()">Stop</button>
+      <button class="reset" onclick="reset()">Reset</button>
+      <button class="lap" onclick="lap()">Lap</button>
+    </div>
+
+    <div class="laps" id="laps"></div>
+
+    <button id="themeToggle" class="theme-toggle">Switch Theme</button>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>
